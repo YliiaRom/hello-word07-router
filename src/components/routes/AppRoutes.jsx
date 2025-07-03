@@ -46,10 +46,10 @@ function AppRoutes() {
           <Route path="/products/:category/:id" element={<ProductPage />} />
 
           {/* outlet */}
-          <Route path="/dashboard" element={<Dashboard />}>
+          {/* <Route path="/dashboard" element={<Dashboard />}>
             <Route path="settings" element={<Settings />} />
             <Route path="profile" element={<Profile />} />
-          </Route>
+          </Route> */}
 
           <Route path="*" element={<Page404 />} />
         </Route>
