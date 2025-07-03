@@ -8,7 +8,7 @@ import ProductsList from "../ProductsList/ProductsList";
 import Product from "../Product/Products";
 import ProductPage from "../../pages/ProductPage";
 // import Dashboard from "../../pages/dasboard/Dashboard";
-// import Settings from "../../pages/dasboard/components/settings";
+// import Settings from "../../pages/dasboard/components/Settings";
 // import Profile from "../../pages/dasboard/components/Profile";
 import ProductsBkList from "../ProductsBk/ProductBkList";
 import frontRoutes from "./frontRoutes.js";
