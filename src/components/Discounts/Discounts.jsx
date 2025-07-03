@@ -5,7 +5,7 @@ import DiscountCard from "./DiscountCard";
 function Discount() {
   return (
     <section className="h-full flex  flex-col items-center gap-10 bg-gradient-to-b from-violet-900 to-black">
-      <h2 className="">Discount Section</h2>
+      <h2 className="">Discount for you</h2>
       <DiscountCard />
       <ButtonSection />
       <SliderBox />

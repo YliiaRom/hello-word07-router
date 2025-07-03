@@ -1,0 +1,94 @@
+.list {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  align-items: stretch;
+  gap: 1rem;
+  row-gap: 1.5rem;
+  padding: 20px;
+  margin: 0 auto;
+}
+.detailCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 0.8rem;
+  box-shadow: -2px -2px 3px #ffffffad, 3px 3px 12px #9999997c,
+    5px 5px 150px #a40bc7;
+}
+
+.detailCard img {
+  border-radius: 5px;
+  margin-bottom: 0.7rem;
+  border: 2px groove #999;
+}
+
+.detailCard div > button {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  width: 200px;
+  /* text-shadow: 0px -1px 0px #1204049b; */
+  max-width: 150px;
+  border: 1px solid #8706f0;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: -1px -1px 2px #999, 2px 2px 3px #343434;
+  border-right: 3px groove rgba(75, 10, 179, 0.953);
+}
+.detailCard div > button span {
+  display: inline-block;
+  background: linear-gradient(40deg, #68616a, #dec6e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  /* transform: skew(5deg); */
+  transform: rotate(-5deg) skew(40deg);
+}
+
+.detailCard div {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  margin-block: 0.5rem;
+}
+.form {
+  max-width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  padding: 1rem;
+  margin: 4rem auto;
+  border-radius: 0.8rem;
+  box-shadow: -2px -2px 3px #ffffffad, 3px 3px 12px #9999997c,
+    5px 5px 150px #a40bc7;
+  border-radius: 0.8rem;
+}
+.form input {
+  font-size: 14px;
+  color: #270347;
+  border-radius: 30px;
+  box-shadow: inset 3px 3px 14px #434244, inset -2px -2px 4px #26024a,
+    inset -3px -3px 9px #6f05d9, inset -6px -6px 25px #270347,
+    -1px -2px 3px #fff, 1px 2px 2px #4a4949;
+  width: 100%;
+  padding: 10px 12px;
+  height: fit-content;
+}
+.form button {
+  letter-spacing: 1px;
+  border: 3px groove #c2c1c4;
+  padding: 0.7rem 1.2rem;
+  border-radius: 25px;
+  border-right: 2px dotted #fff;
+}

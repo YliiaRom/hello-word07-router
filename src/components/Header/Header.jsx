@@ -3,15 +3,25 @@ import { useState } from "react";
 
 // import { a } from "framer-motion/client";
 import { FiGithub, FiTwitter, FiLinkedin, FiMenu, FiX } from "react-icons/fi";
-import ContactInputForm from "../ContactInputForm/ContactInputForm";
-import ContactFormWrap from "../ContactFormWrap/ContactFormWrap";
-import LogoHeader from "../LogoHeader/LogoHeader";
+
 import { headerNav } from "../../helpers/headerNav.js";
-import HeaderNavDesktop from "../NavDesktop/HeaderNavDesktop";
-import HeaderSocIcon from "../HeaderSocIcon/HeaderSocIcon.jsx";
-import HeaderModalButton from "../HeaderModalButton/HeaderModalButton.jsx";
-import HeaderMobileNavBtn from "../HeaderMobileNavBtn/HeaderMobileNavBtn.jsx";
-import HeaderMobileMenu from "../HeaderMobileMenu/HeaderMobileMenu.jsx";
+import HeaderNavDesktop from "./NavDesktop/HeaderNavDesktop";
+import HeaderSocIcon from "./HeaderSocIcon/HeaderSocIcon.jsx";
+import HeaderModalButton from "./HeaderModalButton/HeaderModalButton.jsx";
+import HeaderMobileNavBtn from "./HeaderMobileNavBtn/HeaderMobileNavBtn.jsx";
+import HeaderMobileMenu from "./HeaderMobileMenu/HeaderMobileMenu.jsx";
+import ContactFormWrap from "./ContactFormWrap/ContactFormWrap.jsx";
+import ContactInputForm from "./ContactInputForm/ContactInputForm.jsx";
+import LogoHeader from "./LogoHeader/LogoHeader.jsx";
+const listNav = [
+  {
+    path: "/",
+    label: "Home",
+  },
+  { path: "/about", label: "About" },
+  { path: "/products", label: "Products" },
+  { path: "/api/products", label: "ProductsBk" },
+];
 
 function Header() {
   //Toggle menu open/close
@@ -44,7 +54,7 @@ function Header() {
         <LogoHeader logoContent={"W"} logoTitle="Hello World" />
 
         {/* Desctop Navigation */}
-        <HeaderNavDesktop list={headerNav} contentNavItem={"prop"} />
+        <HeaderNavDesktop list={listNav} />
 
         {/* social-icons */}
         <HeaderSocIcon />
@@ -68,7 +78,7 @@ function Header() {
       {/* mobile-menu */}
       <HeaderMobileMenu
         isOpen={isOpen}
-        list={headerNav}
+        list={listNav}
         toggleMenu={toggleMenu}
         openContactForm={openContactForm}
       />

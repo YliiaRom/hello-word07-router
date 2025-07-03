@@ -16,7 +16,7 @@ function HeaderMobileMenu({ isOpen, list, toggleMenu, openContactForm }) {
         className="md:hidden overflow-hidden bg-gray-800 dark:bg-gray-900 shadow-lg px-4 py-5 space-e-5"
       >
         {/* nav-menu */}
-        <HeaderMobileNav list={list} toggleMenu={toggleMenu} />
+        <HeaderMobileNav list={list} />
 
         {/* social link */}
         <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
