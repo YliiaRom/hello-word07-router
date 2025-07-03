@@ -7,9 +7,7 @@ import Products from "../../pages/Products";
 import ProductsList from "../ProductsList/ProductsList";
 import Product from "../Product/Products";
 import ProductPage from "../../pages/ProductPage";
-// import Dashboard from "../../pages/dasboard/Dashboard";
-// import Settings from "../../pages/dasboard/components/Settings";
-// import Profile from "../../pages/dasboard/components/Profile";
+
 import ProductsBkList from "../ProductsBk/ProductBkList";
 import frontRoutes from "./frontRoutes.js";
 import ProductDetails from "../../pages/ProductDetails.jsx";
@@ -44,12 +42,6 @@ function AppRoutes() {
 
           {/* <Route path="/products/:id" element={<ProductPage />} /> */}
           <Route path="/products/:category/:id" element={<ProductPage />} />
-
-          {/* outlet */}
-          {/* <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="settings" element={<Settings />} />
-            <Route path="profile" element={<Profile />} />
-          </Route> */}
 
           <Route path="*" element={<Page404 />} />
         </Route>
